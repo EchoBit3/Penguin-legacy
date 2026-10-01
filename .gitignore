@@ -34,5 +34,7 @@ Thumbs.db
 *.dll
 *.dylib
 *.gdextension
+*.tmp
+*.bak
 *.zip
 *.tar.gz
