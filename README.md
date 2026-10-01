@@ -1,7 +1,7 @@
 # Penguin Legacy: que es y como se construye?
 
-Penguin Legacy es un fan project 2D, gratuito y escalable, inspirado en la
-sensacion de los mundos sociales con salas, exploracion, coleccion y minijuegos.
+Penguin Legacy es una recreacion fan-made 2D, gratuita y escalable de Club
+Penguin, centrada en recuperar sus salas, exploracion, coleccion y minijuegos.
 No es un producto oficial ni esta afiliado a Club Penguin o Disney.
 
 El proyecto se construye desde cero con Godot, documentacion trazable, modelos

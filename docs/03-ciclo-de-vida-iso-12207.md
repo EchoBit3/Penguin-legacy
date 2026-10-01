@@ -50,7 +50,7 @@ No se adopta Scrum completo por nombre; se usan sus practicas utiles sin inventa
 | F0 | Documentacion, modelos y gate reproducible | READY documental |
 | F1 | Sala, avatar, interaccion e inventario | GREEN funcional |
 | F2 | Guardado versionado e intents locales | GREEN de persistencia |
-| F3 | Minijuego original | GREEN de integracion |
+| F3 | Minijuego recreado | GREEN de integracion |
 | F4 | Red LAN experimental | Threat model aprobado |
 | F5 | Backend y cuentas | Legal, seguridad y privacidad aprobados |
 
