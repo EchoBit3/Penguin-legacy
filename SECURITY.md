@@ -1,59 +1,61 @@
-# Security policy
+# Politica de seguridad
 
-## Scope
+## Alcance
 
-This policy covers the public repository, the documentation branch, future
-Godot client code, local save data and any future network subsystem.
+Esta politica cubre el repositorio publico, las ramas, la documentacion, el
+futuro cliente Godot, los guardados locales y cualquier subsistema de red.
 
-## Repository rules
+## Reglas del repositorio
 
-- Never commit passwords, tokens, private keys, personal data or private assets.
-- Do not publish files from `assets-private/`.
-- Do not run unknown code from issues, pull requests or external assets.
-- Treat Godot addons, native extensions and imported packages as executable code.
-- Record every third-party dependency, version, source and license before use.
-- Do not load native extensions from unverified paths.
-- Review file paths before opening, extracting or importing content.
-- Keep GitHub permissions at least privilege.
-- Protect `main` and require review before merge.
-- Agents and subagents receive only the access required for their task.
-- Read-only reviewers do not edit, commit or push.
-- No agent may bypass branch protection or expose secrets in output.
-- Agents are an explicit trust boundary and receive no credentials by default.
+- Nunca subir contrasenas, tokens, llaves privadas, datos personales o assets privados.
+- No publicar archivos de `assets-private/`, `research-private/` o `research-output/`.
+- No ejecutar codigo desconocido recibido en issues, pull requests o assets externos.
+- Tratar addons de Godot, extensiones nativas y paquetes importados como codigo ejecutable.
+- Registrar dependencia, version, fuente y licencia antes de incorporarla.
+- No cargar extensiones nativas desde rutas no verificadas.
+- Revisar rutas antes de abrir, extraer o importar contenido.
+- Mantener permisos de GitHub con minimo privilegio.
+- Proteger `main` y exigir revision antes de fusionar.
+- Dar a cada agente o subagente solo el acceso necesario para su tarea.
+- Los agentes revisores trabajan en modo lectura y no hacen commit ni push.
+- Ningun agente puede saltarse la proteccion de ramas ni exponer secretos.
+- Los agentes son una frontera de confianza y no reciben credenciales por defecto.
 
-## Reporting a vulnerability
+## Reportar una vulnerabilidad
 
-Do not publish credentials, personal data or exploit instructions in a public
-issue. Use GitHub's private vulnerability reporting from the Security tab when
-it is enabled for this repository. If it is not enabled, contact the repository
-owner through a private GitHub channel and do not disclose technical details
-publicly while waiting for acknowledgement.
+No publiques credenciales, datos personales ni instrucciones de explotacion en
+un issue publico. Usa el reporte privado de vulnerabilidades de GitHub desde la
+pestana Security cuando este habilitado. Si no esta habilitado, contacta al
+owner por un canal privado de GitHub y espera confirmacion sin publicar detalles
+tecnicos.
 
-Include affected commit, component, reproduction steps, impact and suggested
-containment. Do not test systems or accounts that are not explicitly in scope.
+Incluye commit afectado, componente, pasos de reproduccion, impacto y
+contencion sugerida. No pruebes sistemas ni cuentas fuera del alcance explicito.
 
-## Severity
+## Severidad
 
-- Critical: active compromise, secret exposure or material personal-data breach.
-- High: privilege escalation, remote code execution or public release blocker.
-- Medium: limited confidentiality, integrity or availability impact.
-- Low: defense-in-depth or documentation weakness without direct exploit path.
+- Critica: compromiso activo, exposicion de secretos o fuga material de datos personales.
+- Alta: escalada de privilegios, ejecucion remota o bloqueo de release publica.
+- Media: impacto limitado en confidencialidad, integridad o disponibilidad.
+- Baja: defensa en profundidad o debilidad documental sin ruta directa de explotacion.
 
-## Response goals
+## Respuesta
 
-The maintainer records receipt, validates the report, assigns severity,
-contains the affected component and documents the fix or accepted risk. A
-public release is blocked while a critical issue remains uncontained. If a
-secret was committed, it is treated as compromised: revoke or rotate it first,
-then remove the exposure from the current tree and history using an approved
-maintainer procedure.
+El maintainer registra la recepcion, valida el reporte, asigna severidad,
+contiene el componente y documenta la correccion o el riesgo aceptado. Una
+release publica queda bloqueada mientras exista un problema critico sin
+contener.
 
-## Supported baseline
+Si se sube un secreto, se considera comprometido: se revoca o rota primero y
+despues se elimina la exposicion del arbol actual y del historial mediante un
+procedimiento aprobado por el maintainer.
 
-The supported baseline is the latest commit merged to `dev` and any release
-tag explicitly marked as supported in the changelog. Earlier commits are not
-assumed to receive security fixes.
+## Baseline soportada
+
+La baseline soportada es el ultimo commit fusionado en `dev` y cualquier tag de
+release marcado expresamente como soportado en el changelog. Los commits
+anteriores no se consideran automaticamente soportados.
 
 ## Over to you
 
-Security is a release gate, not a document that is completed once and forgotten.
+La seguridad es un gate de release, no un documento que se completa una sola vez.
