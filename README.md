@@ -1,8 +1,34 @@
-# Como construiremos Penguin Legacy sin perder la nostalgia ni la trazabilidad?
+# Penguin Legacy: que es y como se construye?
 
-TL;DR: Penguin Legacy es un fan project gratuito y escalable; primero validamos el loop local, luego agregamos persistencia y solo despues evaluamos red, cuentas y publicacion.
+Penguin Legacy es una recreacion fan-made 2D, gratuita y escalable de Club
+Penguin, centrada en recuperar sus salas, exploracion, coleccion y minijuegos.
+No es un producto oficial ni esta afiliado a Club Penguin o Disney.
 
-## Estado
+El proyecto se construye desde cero con Godot, documentacion trazable, modelos
+UML, diagramas Mermaid, pruebas, seguridad y validacion con usuarios. Primero
+se valida un cliente local pequeno; despues se evaluan persistencia, red,
+cuentas y publicacion.
+
+## Que hay aqui ahora?
+
+- Especificacion de producto y alcance F0.
+- Arquitectura de sistemas y subsistemas.
+- Requisitos, casos de uso y casos de abuso.
+- Politica de seguridad para el repositorio y los agentes.
+- Control de procedencia de assets y derechos.
+- Metricas de calidad, mercado y nostalgia.
+- Modelos UML y diagramas Mermaid editables.
+
+Todavia no hay gameplay ni cliente Godot. La rama actual es una base
+documental para evitar comenzar con decisiones ambiguas o inseguras.
+
+## Alcance fan-made
+
+La meta no es crear un juego parecido: es reconstruir la experiencia de Club
+Penguin como proyecto de fans, manteniendo la nostalgia y dejando visibles los
+limites de derechos, autoria y afiliacion.
+
+## Estado del proyecto
 
 Fase actual: **F0 - fundacion documental**.
 

@@ -14,9 +14,9 @@ flowchart TD
 
 ## 1. Vision
 
-Crear un mundo social 2D original que recupere sensaciones de descubrimiento, calma, humor y coleccion sin depender de una copia literal de una franquicia.
+Reconstruir como fan-made una experiencia social 2D de Club Penguin, recuperando sus salas, descubrimiento, calma, humor y coleccion para uso gratuito y no oficial.
 
-La nostalgia es una hipotesis de producto, no una excusa para copiar una obra. Se validara mediante entrevistas, prototipos y pruebas de tarea.
+La nostalgia es el objetivo creativo de la recreacion. Se validara mediante entrevistas, prototipos y pruebas de tarea, manteniendo claro que el proyecto no es oficial ni afiliado.
 
 ## 2. Alcance F0
 
@@ -46,7 +46,7 @@ No incluye:
 | H-01 | La exploracion tranquila motiva a completar la primera sesion | Prueba de tarea y entrevista posterior |
 | H-02 | Coleccionar un objeto hace memorable la sala | Recuerdo libre despues de la sesion |
 | H-03 | Humor y sorpresa aumentan la intencion de volver | Encuesta y prueba de retorno |
-| H-04 | La nostalgia se puede evocar sin copiar assets | Comparacion de emociones, no de imagenes |
+| H-04 | La recreacion conserva la nostalgia que el jugador recuerda | Comparacion de emociones, tareas y recuerdos |
 
 ## 4. Usuarios y ambiente
 
@@ -77,7 +77,7 @@ El ambiente futuro incluye cliente, sistema operativo, repositorio publico, posi
 | Empezar local | Reduce complejidad y riesgo | No valida comunidad real |
 | Placeholders | Permite programar sin bloquearse por arte | Menor impacto emocional inicial |
 | Dominio separado | Facilita pruebas y futura red | Mas estructura desde el inicio |
-| Universo original | Reduce dependencia de terceros | Exige construir identidad propia |
+| Recreacion fan-made | Conserva reconocimiento y nostalgia | Aumenta el riesgo de derechos y procedencia |
 
 ## Over to you
 

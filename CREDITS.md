@@ -8,6 +8,9 @@ or sponsored by Club Penguin, Disney, or any other rights holder.
 This foundation branch contains original documentation, project structure and
 diagrams. It does not include third-party game assets, music or copied text.
 
+The project identity and recreation scope are explained in `README.md` and
+the rights process is documented in `docs/08-legal-privacidad-y-derechos.md`.
+
 ## Inspiration and references
 
 - OpenPenguin: https://github.com/GuiMar10/OpenPenguin
