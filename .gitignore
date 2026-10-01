@@ -1,0 +1,38 @@
+# Godot editor cache and generated files
+.godot/
+.import/
+export/
+build/
+
+# Local-only content and test output
+assets-private/
+research-private/
+research-output/
+test-results/
+coverage/
+docs/assets/smoke/
+docs/assets/out/
+
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.p12
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Do not publish unverified or generated binaries
+*.apk
+*.aab
+*.exe
+*.so
+*.dll
+*.dylib
+*.gdextension
+*.zip
+*.tar.gz

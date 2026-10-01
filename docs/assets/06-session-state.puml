@@ -1,0 +1,13 @@
+@startuml
+top to bottom direction
+
+[*] --> Booting
+Booting --> Ready: scene loaded
+Ready --> Exploring: start session
+Exploring --> Interacting: valid interaction
+Interacting --> Exploring: event completed
+Exploring --> Closing: exit requested
+Closing --> [*]
+Booting --> Failed: load error
+Failed --> [*]
+@enduml
