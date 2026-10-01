@@ -20,6 +20,7 @@ futuro cliente Godot, los guardados locales y cualquier subsistema de red.
 - Los agentes revisores trabajan en modo lectura y no hacen commit ni push.
 - Ningun agente puede saltarse la proteccion de ramas ni exponer secretos.
 - Los agentes son una frontera de confianza y no reciben credenciales por defecto.
+- No se aceptan emojis en codigo, documentacion, commits ni metadatos publicos.
 
 ## Reportar una vulnerabilidad
 
