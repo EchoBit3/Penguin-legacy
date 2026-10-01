@@ -22,6 +22,12 @@ cuentas y publicacion.
 Todavia no hay gameplay ni cliente Godot. La rama actual es una base
 documental para evitar comenzar con decisiones ambiguas o inseguras.
 
+## Alcance fan-made
+
+La meta no es crear un juego parecido: es reconstruir la experiencia de Club
+Penguin como proyecto de fans, manteniendo la nostalgia y dejando visibles los
+limites de derechos, autoria y afiliacion.
+
 ## Estado del proyecto
 
 Fase actual: **F0 - fundacion documental**.
