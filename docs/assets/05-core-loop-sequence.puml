@@ -2,18 +2,17 @@
 
 actor Jugador
 participant "PlayerActor" as Actor
-participant "LocalAdapter" as Adapter
-participant "EventBus" as Events
-participant "GameDomain" as Domain
+participant "Main" as Main
+participant "Interactable" as Item
 participant "Inventory" as Inventory
-participant "HUD" as Hud
+participant "InventoryPanel" as Panel
 
 Jugador -> Actor: input interactuar
-Actor -> Adapter: Intent(interact)
-Adapter -> Domain: apply(intent)
-Domain -> Inventory: add(itemId, 1)
-Inventory --> Domain: accepted
-Domain --> Events: ItemCollected
-Events --> Hud: refresh inventory
-Hud --> Jugador: muestra item
+Actor -> Main: interaction_requested
+Main -> Item: try_interact
+Item -> Inventory: add(itemId, 1)
+Inventory --> Item: accepted
+Item --> Main: item_collected
+Main -> Panel: changed
+Panel --> Jugador: muestra item
 @enduml

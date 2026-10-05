@@ -19,8 +19,8 @@ cuentas y publicacion.
 - Metricas de calidad, mercado y nostalgia.
 - Modelos UML y diagramas Mermaid editables.
 
-Todavia no hay gameplay ni cliente Godot. La rama actual es una base
-documental para evitar comenzar con decisiones ambiguas o inseguras.
+La base documental vive en `dev`; esta rama inicia F1 con el primer slice local
+de Godot. La implementacion aun no esta fusionada en `dev`.
 
 ## Alcance fan-made
 
@@ -30,9 +30,9 @@ limites de derechos, autoria y afiliacion.
 
 ## Estado del proyecto
 
-Fase actual: **F0 - fundacion documental**.
+Fase actual: **F1 - vertical slice local en desarrollo**.
 
-El repositorio contiene la especificacion, los criterios de calidad y los modelos que deben aprobarse antes de crear gameplay. `main` no se usa como rama de trabajo.
+El repositorio contiene la base documental y la primera escena local de Godot. `main` no se usa como rama de trabajo.
 
 ## Principios no negociables
 
@@ -78,6 +78,8 @@ flowchart TD
 - [Gate F0](docs/13-gate-f0.md)
 - [Sistemas y subsistemas](docs/14-sistemas-y-subsistemas.md)
 - [Roles y responsabilidades](docs/15-roles-y-responsabilidades.md)
+- [F1: vertical slice local](docs/16-f1-vertical-slice.md)
+- [Lecciones y errores F1](docs/17-lecciones-y-errores-f1.md)
 - [ADR-0001: fan project publico](docs/decisions/ADR-0001-fan-project-publico.md)
 
 La politica de seguridad del repositorio esta en [SECURITY.md](SECURITY.md).

@@ -34,6 +34,8 @@ flowchart TD
 | Gate | `13-gate-f0.md` | Como verificamos F0 sin automatizacion propia? |
 | Sistemas | `14-sistemas-y-subsistemas.md` | Donde estan las fronteras de confianza? |
 | Organizacion | `15-roles-y-responsabilidades.md` | Quien puede decidir, revisar y publicar? |
+| F1 | `16-f1-vertical-slice.md` | Como se prueba el primer slice local? |
+| Aprendizaje | `17-lecciones-y-errores-f1.md` | Que errores no debemos repetir? |
 | Decisiones | `decisions/ADR-*.md` | Por que elegimos este camino? |
 
 ## 2. Regla de actualizacion
