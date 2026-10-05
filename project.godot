@@ -10,9 +10,9 @@ config_version=5
 
 [application]
 
-config/name="Penguin Legacy"
-run/main_scene="res://src/scenes/main.tscn"
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/name="OpenPenguin"
+run/main_scene="uid://ds7nykf7f283n"
+config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
@@ -23,10 +23,8 @@ LoadS="*res://hud/load.tscn"
 
 [display]
 
-window/size/viewport_width=960
-window/size/viewport_height=540
-window/size/window_width_override=960
-window/size/window_height_override=540
+window/size/viewport_width=910
+window/size/viewport_height=575
 window/stretch/mode="canvas_items"
 
 [input]
@@ -37,8 +35,21 @@ space={
 ]
 }
 
+[internationalization]
+
+locale/translation_remaps={
+"res://hud/password_secret/en.png": PackedStringArray("res://hud/password_secret/es.png:es", "res://hud/password_secret/pt.png:pt"),
+"res://minigames/thin ice/assets/titles/en.png": PackedStringArray("res://minigames/thin ice/assets/titles/pt.png:pt", "res://minigames/thin ice/assets/titles/es.png:es"),
+"res://rooms/cofffee_shop/sprites/DefineSprite_17/en.png": PackedStringArray("res://rooms/cofffee_shop/sprites/DefineSprite_17/pt.png:pt"),
+"res://rooms/town/assets/sprites/DefineSprite_292/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_294/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_298/1.png:es"),
+"res://rooms/town/assets/sprites/DefineSprite_303/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_305/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_309/1.png:es"),
+"res://rooms/town/assets/sprites/DefineSprite_314/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_316/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_319/1.png:es"),
+"res://rooms/town/assets/sprites/DefineSprite_322/1.png": PackedStringArray("res://rooms/town/assets/sprites/DefineSprite_323/1.png:pt", "res://rooms/town/assets/sprites/DefineSprite_327/1.png:es")
+}
+locale/translations=PackedStringArray("res://minigames/astro barrier/locales/locales.en.translation", "res://minigames/astro barrier/locales/locales.es.translation", "res://minigames/astro barrier/locales/locales.pt_BR.translation")
+locale/locale_filter_mode=1
+
 [rendering]
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
-environment/defaults/default_clear_color=Color(0.05, 0.09, 0.16, 1)
