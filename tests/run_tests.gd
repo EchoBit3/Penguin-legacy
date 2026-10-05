@@ -39,7 +39,7 @@ func _run() -> void:
 	if not _check(player.velocity.x > 0.0, "player responds left and right"):
 		return
 
-	player.global_position = interactable.global_position + Vector2(90, 0)
+	player.global_position = interactable.global_position + Vector2(interactable.interaction_radius + 20.0, 0)
 	instance.call("_on_interaction_requested", player.global_position)
 	if not _check(not instance.inventory.has(item.id), "interaction respects distance"):
 		return

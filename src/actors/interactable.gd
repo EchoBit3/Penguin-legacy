@@ -8,6 +8,14 @@ signal item_collected(item: ItemDefinition)
 
 var _available := true
 
+# Dibuja el area de interaccion para que el jugador vea donde pararse
+func _ready() -> void:
+	queue_redraw()
+
+func _draw() -> void:
+	if _available:
+		draw_arc(Vector2.ZERO, interaction_radius, 0.0, TAU, 48, Color(1, 1, 1, 0.25), 2.0)
+
 func try_interact(origin: Vector2, inventory: Inventory) -> bool:
 	if not _available or item_definition == null:
 		return false
@@ -17,5 +25,6 @@ func try_interact(origin: Vector2, inventory: Inventory) -> bool:
 		return false
 	_available = false
 	visible = false
+	queue_redraw()
 	item_collected.emit(item_definition)
 	return true

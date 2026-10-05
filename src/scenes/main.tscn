@@ -68,7 +68,7 @@ shape = SubResource("RectangleShape_player")
 position = Vector2(620, 300)
 script = ExtResource("3_interactable")
 item_definition = ExtResource("5_item")
-interaction_radius = 84.0
+interaction_radius = 120.0
 
 [node name="Shell" type="Polygon2D" parent="Collectible"]
 polygon = PackedVector2Array(-22, 14, -30, -2, -22, -18, -5, -28, 14, -20, 28, -4, 22, 14, 4, 25)
