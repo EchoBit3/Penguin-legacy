@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://src/scenes/main.gd" id="1_main"]
 [ext_resource type="PackedScene" path="res://src/actors/penguin_skin.tscn" id="6_skin"]
-[ext_resource type="Script" path="res://src/actors/player_actor.gd" id="2_player"]
+[ext_resource type="PackedScene" path="res://src/actors/player.tscn" id="2_player"]
 [ext_resource type="Script" path="res://src/actors/interactable.gd" id="3_interactable"]
 [ext_resource type="Script" path="res://src/ui/inventory_panel.gd" id="4_inventory"]
 [ext_resource type="Resource" path="res://src/data/items/coffee_bag.tres" id="5_item"]
@@ -57,16 +57,10 @@ offset_bottom = 94.0
 theme_override_colors/font_color = Color(0.82, 0.92, 1, 1)
 text = "F1: explora, acercate y recoge un objeto"
 
-[node name="Player" type="CharacterBody2D" parent="."]
+[node name="Player" parent="." instance=ExtResource("2_player")]
 position = Vector2(300, 300)
-script = ExtResource("2_player")
 move_speed = 180.0
 room_bounds = Rect2(56, 120, 848, 360)
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Player"]
-shape = SubResource("RectangleShape_player")
-
-[node name="Skin" parent="Player" instance=ExtResource("6_skin")]
 
 [node name="Collectible" type="Node2D" parent="."]
 position = Vector2(620, 300)

@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3]
+
+[ext_resource type="PackedScene" path="res://rooms/town/towncenter.tscn" id="1_town"]
+[ext_resource type="PackedScene" path="res://src/actors/player.tscn" id="2_player"]
+
+[node name="TownPlay" type="Node2D"]
+
+[node name="Town" parent="." instance=ExtResource("1_town")]
+
+[node name="Player" parent="." instance=ExtResource("2_player")]
+position = Vector2(455, 450)
+room_bounds = Rect2(20, 100, 870, 430)
