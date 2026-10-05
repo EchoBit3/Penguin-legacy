@@ -28,6 +28,7 @@ flowchart TD
 | ERR-010 | La matriz de trazabilidad seguia en `Planned` despues de implementar | El codigo se cambio sin actualizar la evidencia en el mismo cambio | Se actualiza la matriz junto con cada gate F1 | El PR no cierra si la matriz contradice el codigo | En curso |
 | ERR-011 | Godot no estaba instalado en el entorno | El repositorio solo tenia documentacion F0 | Se instalo Godot 4.7.2 fuera del repo y se verifico su version | Registrar herramienta y version antes de F1 | Resuelto |
 | ERR-012 | Los SVG generados por verificadores quedaron fuera del control de Git | Los artefactos de render se crearon en carpetas no ignoradas | Se eliminaron y se ignoraron `docs/assets/smoke/` y `docs/assets/out/` | No versionar salidas generadas ni usar `git add -A` sin revisar | Resuelto |
+| ERR-013 | El avatar placeholder no parecia Club Penguin | F1 arranco sin skin para no bloquear gameplay | Se integro la skin fan-made de OpenPenguin con manifiesto y fallback al placeholder | Toda skin de terceros entra con manifiesto, checksum y estado de riesgo | Resuelto |
 
 ## 2. Reglas derivadas
 

@@ -18,6 +18,7 @@ flowchart TD
 | Proyecto | `project.godot` | Configuracion nativa Godot 4.7 |
 | Sala | `src/scenes/main.tscn` | Composicion del slice local |
 | Jugador | `src/actors/player_actor.gd` | Movimiento e interaccion |
+| Skin | `src/actors/penguin_skin.tscn` | Skin fan-made con caminata; sin ella vale el placeholder |
 | Interactable | `src/actors/interactable.gd` | Distancia y recompensa |
 | Item | `src/data/items/blue_shell.tres` | Datos declarativos del objeto |
 | Dominio | `src/domain/inventory.gd` | Cantidades e invariantes |

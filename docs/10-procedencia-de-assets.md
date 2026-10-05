@@ -50,6 +50,11 @@ estado:
 | Capturas | Solo de builds y assets publicables |
 | Referencias | Fuera de `assets/` y claramente marcadas |
 
+## 3.1. Manifiestos registrados
+
+- `assets/third-party/openpenguin/MANIFEST.md`: skin del pinguino fan-made,
+  estado `risk-accepted`, con `SHA256SUMS` para verificar integridad.
+
 ## 4. Controles
 
 - `.gitignore` bloquea `assets-private/`.
