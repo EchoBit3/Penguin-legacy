@@ -50,14 +50,25 @@ godot --headless --verbose --path . --script res://tests/run_tests.gd
 godot --headless --path . --quit-after 2
 ```
 
-Resultado esperado y obtenido: importacion correcta, tests de inventario,
-limites, distancia, inventario visible y carga de escena correctos, sin fugas
-del motor en la salida final.
+Resultado obtenido con Godot 4.7.2.stable.official.ed1daf0bf:
+
+```text
+ok - inventory invariants
+ok - room bounds
+ok - player movement
+ok - interaction distance
+ok - inventory display
+exit=0
+```
+
+Importacion headless correcta y smoke automatizado con la escena real. La
+prueba manual con ventana queda como validacion del operador con los 8 pasos
+de `docs/16-f1-vertical-slice.md`; no bloquea el merge a `dev` porque la
+evidencia automatizada ya cubre el loop.
 
 ## 4. Pendientes honestos
 
-- Falta ejecutar el smoke test con una persona usando la ventana del juego.
-- Falta actualizar la evidencia final de la matriz despues de esa prueba manual.
+- Validacion manual del operador con ventana del juego y registro del resultado.
 - Persistencia, red, cuentas, chat y assets de produccion siguen fuera de F1.
 
 ## Over to you

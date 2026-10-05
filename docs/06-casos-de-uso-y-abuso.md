@@ -32,7 +32,7 @@ flowchart TD
 | ID | Fase | Abuso | Control | Prueba |
 |---|---|---|---|---|
 | AB-001 | F1 | Forzar carga local invalida | Validacion y error controlado | Cargar datos corruptos |
-| AB-002 | F1 | Salir de los limites de la sala | Colision y limites de dominio | Intentar posiciones invalidas |
+| AB-002 | F1 | Salir de los limites de la sala | Limite de dominio con clamp | Intentar posiciones invalidas |
 | AB-003 | F1 | Repetir una recompensa | Idempotencia de la interaccion | Ejecutar dos veces |
 | AB-004 | F1 | Manipular cantidad del item | Invariante de inventario | Test de limites |
 | AB-005 | F2 | Leer estado corrupto del inventario | Validacion y recuperacion | Alterar estado local |

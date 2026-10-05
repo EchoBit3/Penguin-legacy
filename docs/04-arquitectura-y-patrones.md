@@ -16,15 +16,16 @@ flowchart TD
 
 ## 1. Limites del sistema
 
-| Modulo | Responsabilidad | No debe hacer |
-|---|---|---|
-| `core` | Estado de sesion, eventos y configuracion | Resolver reglas de negocio ocultas |
-| `domain` | Entidades, invariantes y reglas | Depender de nodos de UI |
-| `actors` | Traducir input a intenciones | Ser autoridad de inventario |
-| `scenes` | Composicion visual y navegacion | Persistir datos arbitrarios |
-| `data` | Definiciones de items y salas | Ejecutar logica de red |
-| `net` | Contrato de transporte futuro | Autorizar acciones por si solo |
-| `tests` | Evidencia ejecutable propuesta para F1 | Ser la unica documentacion |
+| Modulo | Estado | Responsabilidad | No debe hacer |
+|---|---|---|---|
+| `domain` | Implementado en F1 | Entidades, invariantes y reglas | Depender de nodos de UI |
+| `actors` | Implementado en F1 | Traducir input a intenciones | Ser autoridad de inventario |
+| `scenes` | Implementado en F1 | Composicion visual y navegacion | Persistir datos arbitrarios |
+| `data` | Implementado en F1 | Definiciones de items y salas | Ejecutar logica de red |
+| `ui` | Implementado en F1 | Mostrar estado sin decidir reglas | Guardar autoridad de inventario |
+| `tests` | Implementado en F1 | Evidencia ejecutable | Ser la unica documentacion |
+| `core` | Propuesta futura | Estado de sesion, eventos y configuracion | Resolver reglas de negocio ocultas |
+| `net` | Propuesta futura | Contrato de transporte futuro | Autorizar acciones por si solo |
 
 ## 2. Patrones aplicados
 

@@ -17,7 +17,7 @@ flowchart TD
 | ID | Fase | Hipotesis o fuente | Tipo | Prioridad | Modelo o ADR | Prueba prevista | Evidencia | Responsable | Estado |
 |---|---|---|---|---|---|---|---|---|---|
 | RF-001 | F1 | H-01 / vision | F | Must | CU-001, `06-session-state.puml` | Carga headless | Godot 4.7.2, code 0 | Implementador | Verified |
-| RF-002 | F1 | H-01 / vision | F | Must | CU-002, `04-domain-class.puml` | Prueba de movimiento | `room_bounds`, code 0 | Implementador | Verified |
+| RF-002 | F1 | H-01 / vision | F | Must | CU-002, `src/actors/player_actor.gd` | Prueba de movimiento | velocity con input, code 0 | Implementador | Verified |
 | RF-003 | F1 | H-02 / vision | F | Must | CU-003, `05-core-loop-sequence.puml` | Prueba de interaccion | distancia y recompensa, code 0 | Implementador | Verified |
 | RF-004 | F1 | H-02 / vision | F | Must | CU-004, `04-domain-class.puml` | Test de inventario | invariantes, code 0 | Implementador | Verified |
 | RF-005 | F1 | H-02 / vision | F | Must | CU-005, `03-use-cases.puml` | Smoke de UI | nombre y cantidad, code 0 | Implementador | Verified |
@@ -31,13 +31,13 @@ flowchart TD
 | RNF-005 | F1 | Calidad | NF | Should | `04-arquitectura-y-patrones.md#1-limites-del-sistema` | Smoke y logs | salida sin warnings | Implementador | Verified |
 | RNF-006 | F0 | Proceso | NF | Must | `03-ciclo-de-vida-iso-12207.md` | Checklist de PR | Pendiente | Maintainer | Planned |
 | CU-001 | F1 | Vision | CU | Must | `06-casos-de-uso-y-abuso.md` | Prueba de inicio | main scene, code 0 | Implementador | Verified |
-| CU-002 | F1 | Vision | CU | Must | `06-casos-de-uso-y-abuso.md` | Prueba de limites | clamp, code 0 | Implementador | Verified |
+| CU-002 | F1 | Vision | CU | Must | `06-casos-de-uso-y-abuso.md` | Prueba de limites y movimiento | clamp y velocity, code 0 | Implementador | Verified |
 | CU-003 | F1 | Vision | CU | Must | `06-casos-de-uso-y-abuso.md` | Prueba de interaccion | distancia, code 0 | Implementador | Verified |
 | CU-004 | F1 | Vision | CU | Must | `06-casos-de-uso-y-abuso.md` | Prueba de item | item y cantidad, code 0 | Implementador | Verified |
 | CU-005 | F1 | Vision | CU | Must | `06-casos-de-uso-y-abuso.md` | Smoke de UI | nombre visible, code 0 | Implementador | Verified |
 | CU-006 | F2 | Vision | CU | Should | `06-casos-de-uso-y-abuso.md` | Salida limpia | Pendiente | Implementador | Planned |
 | AB-001 | F1 | CU-001 | AB | Must | `04-arquitectura-y-patrones.md#1-limites-del-sistema` | Datos corruptos | Pendiente | Seguridad | Planned |
-| AB-002 | F1 | CU-002 | AB | Must | `04-domain-class.puml` | Posicion invalida | clamp, code 0 | Seguridad | Verified |
+| AB-002 | F1 | CU-002 | AB | Must | `src/actors/player_actor.gd` | Posicion invalida | clamp, code 0 | Seguridad | Verified |
 | AB-003 | F1 | CU-003 | AB | Must | `05-core-loop-sequence.puml` | Replay de recompensa | one-shot, code 0 | Seguridad | Verified |
 | AB-004 | F1 | CU-004 | AB | Must | `04-domain-class.puml` | Cantidad negativa | inventory tests, code 0 | Seguridad | Verified |
 | AB-005 | F2 | CU-005 | AB | Should | `03-ciclo-de-vida-iso-12207.md#3-fases` | Estado corrupto | Pendiente | Seguridad | Planned |
