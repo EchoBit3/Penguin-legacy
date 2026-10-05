@@ -7,7 +7,12 @@ extends Node2D
 
 var inventory := Inventory.new()
 
+# Valida configuracion declarativa antes de aceptar input del jugador
 func _ready() -> void:
+	if _player.room_bounds.size == Vector2.ZERO:
+		push_warning("room_bounds sin declarar en Player")
+	if _collectible.item_definition == null:
+		push_warning("item_definition sin declarar en Collectible")
 	_player.interaction_requested.connect(_on_interaction_requested)
 	_collectible.item_collected.connect(_on_item_collected)
 	_inventory_panel.bind(inventory, [_collectible.item_definition])
