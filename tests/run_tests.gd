@@ -31,6 +31,13 @@ func _run() -> void:
 	player.clamp_to_room()
 	if not _check(player.global_position == Vector2(56, 120), "player stays inside room bounds"):
 		return
+	if not _check(player.move_speed > 0.0, "player has positive move speed"):
+		return
+	Input.action_press("ui_right")
+	player._physics_process(0.016)
+	Input.action_release("ui_right")
+	if not _check(player.velocity.x > 0.0, "player responds left and right"):
+		return
 
 	player.global_position = interactable.global_position + Vector2(90, 0)
 	instance.call("_on_interaction_requested", player.global_position)
@@ -49,6 +56,7 @@ func _run() -> void:
 		return
 
 	results.append("room bounds")
+	results.append("player movement")
 	results.append("interaction distance")
 	results.append("inventory display")
 	instance.queue_free()
