@@ -20,15 +20,34 @@ func _physics_process(_delta: float) -> void:
 	velocity = direction * move_speed
 	move_and_slide()
 	clamp_to_room()
+	_update_skin(direction)
 	if Input.is_action_just_pressed("ui_accept"):
 		interaction_requested.emit(global_position)
+
+# Anima la skin fan-made segun el movimiento; sin skin no hace nada
+func _update_skin(direction: Vector2) -> void:
+	var skin := get_node_or_null("Skin")
+	if skin == null:
+		return
+	if direction.x < 0.0:
+		skin.scale.x = -absf(skin.scale.x)
+	elif direction.x > 0.0:
+		skin.scale.x = absf(skin.scale.x)
+	for layer in [skin.get_node("LayerTop"), skin.get_node("LayerMid"), skin.get_node("LayerLow")]:
+		if direction != Vector2.ZERO:
+			layer.play("walk")
+		else:
+			layer.play("idle")
 
 func clamp_to_room() -> void:
 	if room_bounds.size != Vector2.ZERO:
 		global_position.x = clamp(global_position.x, room_bounds.position.x, room_bounds.end.x)
 		global_position.y = clamp(global_position.y, room_bounds.position.y, room_bounds.end.y)
 
+# Dibuja el placeholder solo cuando no hay skin fan-made cargada
 func _draw() -> void:
+	if get_node_or_null("Skin") != null:
+		return
 	draw_circle(Vector2.ZERO, BODY_RADIUS, body_color)
 	draw_circle(Vector2(-EYE_OFFSET, -5.0), EYE_RADIUS, Color.WHITE)
 	draw_circle(Vector2(EYE_OFFSET, -5.0), EYE_RADIUS, Color.WHITE)
