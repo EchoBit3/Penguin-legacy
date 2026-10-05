@@ -73,6 +73,13 @@ accion `space`, copiados del `project.godot` upstream. Verificado: las 8
 escenas jugables instancian en Godot 4.7.2 headless sin errores de
 script y los 5 tests F1 siguen en verde.
 
+## Set 4b: coleccionable original (2026-10-05)
+
+El proyecto original no trae concha (no tiene playa), asi que el objeto
+de la Bahia usa la bolsa de cafe del Coffee Shop sin copiar archivos:
+`rooms/cofffee_shop/sprites/DefineSprite_148/1.png` (101x74, ya incluido
+en el Set 3). Nada externo al proyecto original.
+
 ## Set 5: icono y audio (2026-10-05)
 
 Origen: mismo repositorio y commit `e628a25`. Archivos copiados sin

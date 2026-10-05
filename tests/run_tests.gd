@@ -12,7 +12,7 @@ func _run() -> void:
 			return
 		results.append(result)
 
-	var item := load("res://src/data/items/blue_shell.tres") as ItemDefinition
+	var item := load("res://src/data/items/coffee_bag.tres") as ItemDefinition
 	if not _check(item != null, "item definition loads"):
 		return
 	var scene := load("res://src/scenes/main.tscn") as PackedScene

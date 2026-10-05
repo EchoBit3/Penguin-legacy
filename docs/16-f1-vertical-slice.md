@@ -1,6 +1,6 @@
 # Como funciona la primera vertical slice local?
 
-TL;DR: F1 demuestra una sala local donde el jugador se mueve, interactua con una concha azul y la ve en el inventario.
+TL;DR: F1 demuestra una sala local donde el jugador se mueve, interactua con la bolsa de cafe original y la ve en el inventario.
 
 ```mermaid
 flowchart TD
@@ -20,7 +20,7 @@ flowchart TD
 | Jugador | `src/actors/player_actor.gd` | Movimiento e interaccion |
 | Skin | `src/actors/penguin_skin.tscn` | Skin fan-made con caminata; sin ella vale el placeholder |
 | Interactable | `src/actors/interactable.gd` | Distancia y recompensa |
-| Item | `src/data/items/blue_shell.tres` | Datos declarativos del objeto |
+| Item | `src/data/items/coffee_bag.tres` | Datos declarativos del objeto original |
 | Dominio | `src/domain/inventory.gd` | Cantidades e invariantes |
 | UI | `src/ui/inventory_panel.gd` | Nombre y cantidad del item |
 | Pruebas | `tests/` | Tests headless nativos de Godot |
@@ -30,9 +30,9 @@ flowchart TD
 1. Abrir el proyecto con Godot 4.7.2.
 2. Ejecutar la escena principal.
 3. Mover el avatar con las flechas.
-4. Acercarse a la concha azul.
+4. Acercarse a la bolsa de cafe.
 5. Presionar Enter.
-6. Confirmar `Concha azul x1` en el inventario.
+6. Confirmar `Bolsa de cafe x1` en el inventario.
 7. Presionar Enter otra vez y confirmar que no aumenta la cantidad.
 8. Intentar salir de la sala y confirmar que el avatar queda dentro de sus limites.
 
