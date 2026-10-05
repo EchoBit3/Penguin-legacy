@@ -1,40 +1,15 @@
-# Godot editor cache and generated files
+# Godot 4+ specific ignores
 .godot/
+
+# Godot-specific ignores
 .import/
-export/
-build/
+export.cfg
+export_presets.cfg
 
-# Local-only content and test output
-assets-private/
-research-private/
-research-output/
-test-results/
-coverage/
-docs/assets/smoke/
-docs/assets/out/
+# Imported translations (automatically generated from CSV files)
+*.translation
 
-# Local environment and secrets
-.env
-.env.*
-!.env.example
-*.pem
-*.p12
-
-# OS and editor files
-.DS_Store
-Thumbs.db
-.idea/
-.vscode/
-
-# Do not publish unverified or generated binaries
-*.apk
-*.aab
-*.exe
-*.so
-*.dll
-*.dylib
-*.gdextension
-*.tmp
-*.bak
-*.zip
-*.tar.gz
+# Mono-specific ignores
+.mono/
+data_*/
+mono_crash.*.json

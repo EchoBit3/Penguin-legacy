@@ -1,0 +1,208 @@
+[gd_scene load_steps=6 format=3 uid="uid://ds7nykf7f283n"]
+
+[ext_resource type="Script" uid="uid://cc14jxwxqng4h" path="res://hud/login.gd" id="1_piqd1"]
+[ext_resource type="Texture2D" uid="uid://bhnas3swki8in" path="res://hud/assets/shapes/24.svg" id="1_q2foo"]
+[ext_resource type="Texture2D" uid="uid://c0yyt5abylgd0" path="res://hud/assets/Captura de tela 2025-03-08 153309.png" id="2_omc8e"]
+[ext_resource type="Theme" uid="uid://dasypqy7umup1" path="res://hud/assets/ui_theme.tres" id="2_r1nb8"]
+[ext_resource type="Texture2D" uid="uid://dkqn0i1io7oeq" path="res://hud/password_secret/en.png" id="146_14rbk"]
+
+[node name="Login" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(455.208, 287.5)
+scale = Vector2(1.19792, 1.19792)
+texture = ExtResource("1_q2foo")
+
+[node name="CapturaDeTela2025-03-08153309" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0)
+position = Vector2(455.933, 289)
+scale = Vector2(1.09542, 1.09542)
+texture = ExtResource("2_omc8e")
+
+[node name="Login" type="Control" parent="."]
+visible = false
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -167.0
+offset_top = -174.5
+offset_right = 163.0
+offset_bottom = 17.5
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="LineEdit2" type="LineEdit" parent="Login"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = -9.0
+offset_right = 341.0
+offset_bottom = 27.0
+theme = ExtResource("2_r1nb8")
+
+[node name="Label2" type="Label" parent="Login"]
+layout_mode = 0
+offset_left = -31.0
+offset_top = -6.0
+offset_right = 85.0
+offset_bottom = 26.0
+theme = ExtResource("2_r1nb8")
+text = "Password:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Login"]
+layout_mode = 0
+offset_left = 92.0
+offset_top = -46.0
+offset_right = 341.0
+offset_bottom = -10.0
+theme = ExtResource("2_r1nb8")
+
+[node name="Label" type="Label" parent="Login"]
+layout_mode = 0
+offset_left = -48.0
+offset_top = -44.0
+offset_right = 84.0
+offset_bottom = -13.0
+theme = ExtResource("2_r1nb8")
+text = "Penguin Name:"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="CheckBox2" type="CheckBox" parent="Login"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 61.0
+offset_right = 316.0
+offset_bottom = 102.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_r1nb8")
+text = "Remember my password"
+
+[node name="CheckBox" type="CheckBox" parent="Login"]
+layout_mode = 0
+offset_left = 37.0
+offset_top = 16.0
+offset_right = 360.0
+offset_bottom = 81.0
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_r1nb8")
+text = "Remember me on this computer"
+
+[node name="Button5" type="Button" parent="Login"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = 303.0
+offset_right = 131.0
+offset_bottom = 349.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_r1nb8")
+theme_override_font_sizes/font_size = 19
+text = "Back"
+
+[node name="Button4" type="Button" parent="Login"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -122.0
+offset_top = 238.0
+offset_right = 130.0
+offset_bottom = 284.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_r1nb8")
+theme_override_font_sizes/font_size = 22
+text = "Club Penguin Rules"
+
+[node name="Button3" type="Button" parent="Login"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -158.0
+offset_top = 150.0
+offset_right = 164.0
+offset_bottom = 222.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_r1nb8")
+theme_override_font_sizes/font_size = 22
+text = "Don't have a penguin?
+Create a free account now"
+
+[node name="Button2" type="Button" parent="Login"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -121.0
+offset_top = 103.0
+offset_right = 131.0
+offset_bottom = 143.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_default_cursor_shape = 2
+theme = ExtResource("2_r1nb8")
+theme_override_font_sizes/font_size = 20
+text = "Forgot your password?"
+
+[node name="Button" type="Button" parent="Login"]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -90.0
+offset_top = -80.0
+offset_right = 104.0
+offset_bottom = -17.0
+grow_horizontal = 2
+grow_vertical = 0
+mouse_default_cursor_shape = 2
+text = "Login"
+
+[node name="Reminder" type="Sprite2D" parent="Login"]
+position = Vector2(428, 185)
+scale = Vector2(1.21681, 1.21681)
+texture = ExtResource("146_14rbk")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -72.0
+offset_top = -32.0
+offset_right = 72.0
+offset_bottom = 32.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_piqd1")
