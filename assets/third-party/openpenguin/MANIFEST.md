@@ -72,3 +72,14 @@ los autoloads originales (`Astrobarrierplayer`, `Load`, `LoadS`) y la
 accion `space`, copiados del `project.godot` upstream. Verificado: las 8
 escenas jugables instancian en Godot 4.7.2 headless sin errores de
 script y los 5 tests F1 siguen en verde.
+
+## Set 5: icono y audio (2026-10-05)
+
+Origen: mismo repositorio y commit `e628a25`. Archivos copiados sin
+modificar a la raiz, con las rutas que el motor espera:
+
+- `icon.svg` (+ su `.import`) como icono del proyecto
+- `default_bus_layout.tres` con el bus `Soundtrack` hacia `Master`
+
+Estado `risk-accepted`. Verificado: importacion sin errores, bus
+`Soundtrack` activo en `AudioServer` y 5 tests F1 en verde.
