@@ -1,0 +1,56 @@
+[gd_scene load_steps=6 format=3 uid="uid://gbevuigg6v3k"]
+
+[ext_resource type="PackedScene" uid="uid://dkr37jheu3wbl" path="res://minigames/astro barrier/objects/player.tscn" id="1_i5hax"]
+[ext_resource type="PackedScene" uid="uid://k1v6cv4en1ab" path="res://minigames/astro barrier/scenes/background.tscn" id="1_jv1jr"]
+[ext_resource type="Texture2D" uid="uid://bk06gimbrkp1d" path="res://minigames/astro barrier/assets/shapes/31.png" id="4_xx4qi"]
+[ext_resource type="PackedScene" uid="uid://ddhrheji4qsug" path="res://minigames/astro barrier/objects/astrobarriercollision.tscn" id="5_nyck7"]
+[ext_resource type="PackedScene" uid="uid://dx6rdux1np8m4" path="res://minigames/astro barrier/objects/target.tscn" id="7_6vjbt"]
+
+[node name="astrogame1" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_jv1jr")]
+
+[node name="astrobarrierplayer" parent="." instance=ExtResource("1_i5hax")]
+position = Vector2(468, 435)
+scale = Vector2(0.429, 0.429)
+collision_layer = 2
+
+[node name="bar1" type="Sprite2D" parent="."]
+position = Vector2(471, 132)
+scale = Vector2(0.415, 0.415)
+texture = ExtResource("4_xx4qi")
+
+[node name="bar2" type="Sprite2D" parent="."]
+position = Vector2(471, 180)
+scale = Vector2(0.415, 0.415)
+texture = ExtResource("4_xx4qi")
+
+[node name="bar3" type="Sprite2D" parent="."]
+position = Vector2(471, 231)
+scale = Vector2(0.415, 0.415)
+texture = ExtResource("4_xx4qi")
+
+[node name="bar4" type="Sprite2D" parent="."]
+position = Vector2(471, 282)
+scale = Vector2(0.415, 0.415)
+texture = ExtResource("4_xx4qi")
+
+[node name="astrobarriercollision" parent="." instance=ExtResource("5_nyck7")]
+visible = false
+position = Vector2(307, 463)
+
+[node name="astrobarriercollision2" parent="." instance=ExtResource("5_nyck7")]
+visible = false
+position = Vector2(637, 460)
+
+[node name="astrobarrieralvo" parent="." instance=ExtResource("7_6vjbt")]
+position = Vector2(501, 132)
+
+[node name="astrobarrieralvo2" parent="." instance=ExtResource("7_6vjbt")]
+position = Vector2(429, 180)
+
+[node name="astrobarrieralvo3" parent="." instance=ExtResource("7_6vjbt")]
+position = Vector2(500, 231)
+
+[node name="astrobarrieralvo4" parent="." instance=ExtResource("7_6vjbt")]
+position = Vector2(429, 282)

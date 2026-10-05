@@ -57,3 +57,18 @@ modificar:
 Volumen total de `rooms/`: 69 MB. Estado `risk-accepted`. Verificado:
 `coffee.tscn` y `box_dimension.tscn` instancian en Godot 4.7.2 headless
 sin errores de carga.
+
+## Set 4: Minijuegos + autoloads (2026-10-05)
+
+Origen: mismo repositorio y commit `e628a25`. Carpeta `minigames/`
+completa y sin modificar:
+
+- `astro barrier/` (4 niveles, editor y terminal)
+- `thin ice/` (en desarrollo upstream)
+- `aqua grabber/` (solo assets, sin escenas jugables)
+
+Estado `risk-accepted`. Para que carguen se agregaron a `project.godot`
+los autoloads originales (`Astrobarrierplayer`, `Load`, `LoadS`) y la
+accion `space`, copiados del `project.godot` upstream. Verificado: las 8
+escenas jugables instancian en Godot 4.7.2 headless sin errores de
+script y los 5 tests F1 siguen en verde.
