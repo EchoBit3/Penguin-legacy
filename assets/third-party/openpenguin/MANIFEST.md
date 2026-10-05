@@ -45,3 +45,15 @@ politica del Set 1. Verificado: `rooms/town/towncenter.tscn` instancia
 en Godot 4.7.2 headless con 26 nodos raiz y los tests F1 siguen en verde.
 Pendiente: autoloads `Load`/`Astrobarrierplayer` del proyecto original
 para la navegacion entre salas.
+
+## Set 3: Coffee Shop + Box Dimension (2026-10-05)
+
+Origen: mismo repositorio y commit `e628a25`. Carpetas copiadas sin
+modificar:
+
+- `rooms/cofffee_shop/` (asi se escribe upstream, con triple f)
+- `rooms/box_dimension/` (en desarrollo upstream)
+
+Volumen total de `rooms/`: 69 MB. Estado `risk-accepted`. Verificado:
+`coffee.tscn` y `box_dimension.tscn` instancian en Godot 4.7.2 headless
+sin errores de carga.
