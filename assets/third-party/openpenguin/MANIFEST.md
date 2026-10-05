@@ -28,3 +28,20 @@ gratuito con creditos y retirada inmediata ante reclamo del titular. Ver
 Verificar con `sha256sum -c` desde `assets/third-party/openpenguin`
 usando el archivo `SHA256SUMS`. Cualquier archivo modificado o agregado
 requiere una nueva entrada en este manifiesto antes de su PR.
+
+## Set 2: Town + HUD + base (2026-10-05)
+
+Origen: mismo repositorio y commit `e628a25` del 2026-10-05. Carpetas
+copiadas sin modificar, conservando rutas `res://` para que las escenas
+originales carguen tal cual:
+
+- `rooms/town/` (Town AS1/AS2, AS3 y version OG)
+- `hud/` (pantallas load y login, fuentes y sprites)
+- `other/` (botones y logica del pinguino)
+- `docs/original-snowball-engine.md` (guia original de conversion)
+
+Volumen: 1631 archivos, 23 MB. Estado `risk-accepted` con la misma
+politica del Set 1. Verificado: `rooms/town/towncenter.tscn` instancia
+en Godot 4.7.2 headless con 26 nodos raiz y los tests F1 siguen en verde.
+Pendiente: autoloads `Load`/`Astrobarrierplayer` del proyecto original
+para la navegacion entre salas.
