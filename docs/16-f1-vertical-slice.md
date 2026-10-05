@@ -49,7 +49,20 @@ La evidencia F1 debe registrar version de Godot, codigo de salida y salida
 completa. En esta fase no se agregan cuentas, red, chat, guardado o assets
 originales de Club Penguin.
 
-## 4. Riesgos abiertos
+## 4. Contenido original integrado
+
+Ademas del slice local, el proyecto incluye el contenido fan-made de
+OpenPenguin verificado en Godot 4.7.2:
+
+- `rooms/town/` Town actual y OG, `rooms/cofffee_shop/`, `rooms/box_dimension/`
+- `minigames/astro barrier/` 4 niveles y terminal, `minigames/thin ice/`
+- `hud/` pantallas de carga y login
+- Skin del pinguino con caminata en `src/actors/penguin_skin.tscn`
+
+Evidencia: 5 tests F1 en verde y 11 escenas instanciadas sin errores de
+script. Detalle y procedencia en `docs/17` y el manifiesto de terceros.
+
+## 5. Riesgos abiertos
 
 - No existe persistencia entre sesiones; corresponde a F2.
 - La interaccion local aun no es una autoridad de servidor; corresponde a F4.

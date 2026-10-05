@@ -29,6 +29,7 @@ flowchart TD
 | ERR-011 | Godot no estaba instalado en el entorno | El repositorio solo tenia documentacion F0 | Se instalo Godot 4.7.2 fuera del repo y se verifico su version | Registrar herramienta y version antes de F1 | Resuelto |
 | ERR-012 | Los SVG generados por verificadores quedaron fuera del control de Git | Los artefactos de render se crearon en carpetas no ignoradas | Se eliminaron y se ignoraron `docs/assets/smoke/` y `docs/assets/out/` | No versionar salidas generadas ni usar `git add -A` sin revisar | Resuelto |
 | ERR-013 | El avatar placeholder no parecia Club Penguin | F1 arranco sin skin para no bloquear gameplay | Se integro la skin fan-made de OpenPenguin con manifiesto y fallback al placeholder | Toda skin de terceros entra con manifiesto, checksum y estado de riesgo | Resuelto |
+| ERR-014 | Astro Barrier no cargaba sin su autoload ni su tecla | El port inicial no trajo la config del proyecto original | Se agregaron autoloads y accion `space` a `project.godot` | Todo port incluye su config nativa y prueba de carga | Resuelto |
 
 ## 2. Reglas derivadas
 
